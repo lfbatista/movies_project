@@ -2,19 +2,21 @@ from django.http import HttpResponseRedirect, Http404
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from .models import Choice, Question
+from django.utils import timezone
 
 # Create your views here.
 # Getting movies
 def index(request):
-    latest_question_list = Question.objects.order_by('-question_text')
+    latest_question_list = Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:10]
     context = {'latest_question_list': latest_question_list}
     # Loads templates
     return render(request, 'moviesapp/index.html', context)
 
 # Show movie
 def detail(request, question_id):
+
     try:
-        question = Question.objects.get(pk=question_id)
+        question = Question.objects.filter(pub_date__lte=timezone.now()).get(pk=question_id)
     except Question.DoesNotExist:
         raise Http404("Question does not exist")
     return render(request, 'moviesapp/detail.html', {'question': question})
