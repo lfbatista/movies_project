@@ -23,4 +23,4 @@
 <h2>Run the program in a local server using the following command:</h2>
 <code>python manage.py runserver</code><br><br>
 
-<p>Browse [localhost:8000](http://localhost:8000) in your browser</p>
+Browse [localhost:8000](http://localhost:8000) in your browser
