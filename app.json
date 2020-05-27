@@ -1,0 +1,11 @@
+{
+    "name": "Movies Poll",
+    "description": "A poll app made with Django",
+    "repository": "https://github.com/lfbatista/movies_project",
+    "logo": "https://static.djangoproject.com/img/logos/django-logo-positive.png",
+    "keywords": [
+        "django",
+        "python",
+        "heroku"
+    ]
+}
