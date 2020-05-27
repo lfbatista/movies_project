@@ -1,4 +1,5 @@
-# Favorite Movies Polls (Django App)
+# Favorite Movies Polls (Django App) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lfbatista/movies_project/)
+
 <h1>Quickstart</h1>
 <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.</p>
 
