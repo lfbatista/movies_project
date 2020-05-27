@@ -1,4 +1,6 @@
-# Favorite Movies Polls (Django App) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lfbatista/movies_project/)
+# Favorite Movies Polls (Django App)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lfbatista/movies_project/)
 
 <h1>Quickstart</h1>
 <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.</p>
@@ -21,4 +23,4 @@
 <h2>Run the program in a local server using the following command:</h2>
 <code>python manage.py runserver</code><br><br>
 
-<p>Browse <i>localhost:8000</i> in your browser</p>
+<p>Browse [localhost:8000](http://localhost:8000) in your browser</p>
