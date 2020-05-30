@@ -1,1 +1,1 @@
--web: gunicorn fav_movies.wsgi:application --log-file -
+web: gunicorn fav_movies.wsgi:application --log-file -
