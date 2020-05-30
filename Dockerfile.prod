@@ -18,6 +18,19 @@ RUN pip install --upgrade pip
 COPY requirements.txt /code
 RUN pip wheel --no-cache-dir --no-deps --wheel-dir /code/wheels -r requirements.txt
 
+# Build-time metadata as defined at http://label-schema.org
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+LABEL org.label-schema.build-date=$BUILD_DATE \
+  org.label-schema.name="Movies Project" \
+  org.label-schema.description="A poll app made with Django." \
+  org.label-schema.url="https://movies-poll.herokuapp.com/" \
+  org.label-schema.vcs-ref=$VCS_REF \
+  org.label-schema.vcs-url="https://github.com/lfbatista/movies_project/tree/docker" \
+  org.label-schema.version=$VERSION \
+  org.label-schema.schema-version="1.0"
+
 
 ## FINAL
 FROM python:3.6.10-alpine
