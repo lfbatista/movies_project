@@ -1,7 +1,7 @@
 import datetime
 from django.test import TestCase
 from django.utils import timezone
-from fav_movies.moviesapp.models import Question
+from moviesapp.models import Question
 from django.urls import reverse
 
 

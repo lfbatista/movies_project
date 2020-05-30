@@ -1,6 +1,11 @@
-venv
+.DS_Store
 *.pyc
+__pycache
 .env
-db.sqlite
+.env.dev
+.env.prod
+.env.prod.db
+db.sqlite3
 .gitattributes
 .idea
+venv
