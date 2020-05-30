@@ -27,7 +27,7 @@ Browse [localhost:8000](http://localhost:8000)
 
 #### Manual Installation
 #### Prerequisites
-<code>python==3.6 or up and django==2.7 or up</code>
+> python==3.6 or up and django==2.7 or up
 
 In the terminal, type:
 ```sh
