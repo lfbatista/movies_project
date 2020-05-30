@@ -39,7 +39,7 @@ $ git clone https://github.com/lfbatista/movies_project.git
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
-<code>or [download](https://github.com/lfbatista/movies_project/archive/docker.zip) this repository.</code>
+or [download](https://github.com/lfbatista/movies_project/archive/docker.zip) this repository.
 
 #### Create a superuser
 
