@@ -14,6 +14,7 @@ Browse [localhost](http://localhost)
 ## Development
 ### Quickstart
 <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.</p>
+
 #### Using Docker
 
 - Update the environment variables in the *docker-compose.yml* and *.env.dev* files.
@@ -29,27 +30,25 @@ Browse [localhost:8000](http://localhost:8000)
 <code>python==3.6 or up and django==2.7 or up</code>
 
 In the terminal, type:
-
-    ```sh
-    $ git clone https://github.com/lfbatista/movies_project.git
-    ```
-
+```sh
+$ git clone https://github.com/lfbatista/movies_project.git
+```
 #### Migrate the database
 
-    ```sh
-    $ python manage.py makemigrations
-    $ python manage.py migrate
-    ```
-<code>or [download](https://github.com/lfbatista/movies_project.git) this repository.</code>
+```sh
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+<code>or [download](https://github.com/lfbatista/movies_project/archive/docker.zip) this repository.</code>
 
 #### Create a superuser
 
-    ```sh
-    $ python manage.py createsuperuser
-    ``` 
+```sh
+$ python manage.py createsuperuser
+``` 
 #### Run the program in a local server
 
-    ```sh
-    $ python manage.py runserver
-    ```
+```sh
+$ python manage.py runserver
+```
 Browse [localhost:8000](http://localhost:8000)
