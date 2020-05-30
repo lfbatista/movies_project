@@ -4,7 +4,6 @@ __pycache
 .env
 .env.dev
 .env.prod
-.env.prod.db
 db.sqlite3
 .gitattributes
 .idea
