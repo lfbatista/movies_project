@@ -33,13 +33,14 @@ In the terminal, type:
 ```sh
 $ git clone https://github.com/lfbatista/movies_project.git
 ```
+or [download](https://github.com/lfbatista/movies_project/archive/docker.zip) this repository.
+
 #### Migrate the database
 
 ```sh
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
-or [download](https://github.com/lfbatista/movies_project/archive/docker.zip) this repository.
 
 #### Create a superuser
 
