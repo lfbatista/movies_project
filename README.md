@@ -3,6 +3,11 @@
 ### With Heroku (w/out nginx)</h3>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lfbatista/movies_project/)
 ### With Docker</h3>
+[![Docker cloud build](https://img.shields.io/docker/cloud/build/batistaluisfilipe/movies_web)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+[![Docker Automated build](https://img.shields.io/docker/cloud/automated/batistaluisfilipe/movies_web)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+[![](https://images.microbadger.com/badges/version/batistaluisfilipe/movies_web.svg)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+[![](https://images.microbadger.com/badges/image/batistaluisfilipe/movies_web.svg)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+
 - Update the environment variables.
 - Build the images and run the containers:
 
@@ -53,3 +58,8 @@ $ python manage.py createsuperuser
 $ python manage.py runserver
 ```
 Browse [localhost:8000](http://localhost:8000)
+
+## Licensing [![license](https://img.shields.io/github/license/lfbatista/movies_project)](LICENSE)
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the [MIT license](LICENSE).
