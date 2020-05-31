@@ -10,7 +10,8 @@
 [![Docker layers](https://img.shields.io/microbadger/layers/batistaluisfilipe/movies_web)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
 <!-- [![](https://images.microbadger.com/badges/image/batistaluisfilipe/movies_web.svg)](https://hub.docker.com/r/batistaluisfilipe/movies_web) -->
 
-- Update the environment variables.
+- Rename *.env.prod.example* to *.env.prod*
+- Update the environment variables in the *docker-compose.yml* and *.env.dev* files
 - Build the images and run the containers:
 
     ```sh
@@ -24,7 +25,8 @@ Browse [localhost](http://localhost)
 
 #### Using Docker
 
-- Update the environment variables in the *docker-compose.yml* and *.env.dev* files.
+- Rename *.env.dev.example* to *.env.dev*
+- Update the environment variables in the *docker-compose.yml* and *.env.dev* files
 - Build the images and run the containers:
 
     ```sh
