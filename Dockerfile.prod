@@ -53,7 +53,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
   org.label-schema.vcs-url="https://github.com/lfbatista/movies_project/tree/docker" \
   org.label-schema.schema-version="1.0" \
   org.label-schema.license="MIT" \
-  org.label-docker.dockerfile="/Dockerfile.prod"
+  org.label-schema.docker.dockerfile="/Dockerfile.prod"
 
 # copy project
 COPY . $APP_HOME
