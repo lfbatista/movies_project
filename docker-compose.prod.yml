@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.prod
-    image: movies_web
+    image: batistaluisfilipe/movies_web
     command: gunicorn fav_movies.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - static_volume:/home/code/web/staticfiles
@@ -17,6 +17,7 @@ services:
       - ./.env.prod
   nginx:
     build: ./nginx
+    image: batistaluisfilipe/nginx
     volumes:
       - static_volume:/home/code/web/staticfiles
     ports:
