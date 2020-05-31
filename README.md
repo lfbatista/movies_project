@@ -15,7 +15,7 @@
 - Build the images and run the containers:
 
     ```sh
-    $ docker-compose -f docker-compose.prod.yml up -d --build
+    $ docker-compose -f docker-compose.prod.yml up -d
     ```
 Browse [localhost](http://localhost)
 
@@ -30,7 +30,7 @@ Browse [localhost](http://localhost)
 - Build the images and run the containers:
 
     ```sh
-    $ docker-compose up -d --build
+    $ docker-compose up -d
     ```
 Browse [localhost:8000](http://localhost:8000)
 
