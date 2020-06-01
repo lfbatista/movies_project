@@ -24,3 +24,8 @@
 <code>python manage.py runserver</code><br><br>
 
 Browse [localhost:8000](http://localhost:8000) in your browser
+
+## Licensing [![license](https://img.shields.io/github/license/lfbatista/movies_project)](LICENSE)
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the [MIT license](LICENSE).
