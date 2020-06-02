@@ -1,6 +1,6 @@
 # Favorite Movies Polls (django + gunicorn + nginx)
 ## Production
-### With Heroku (w/out nginx)</h3>
+### With Heroku</h3>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lfbatista/movies_project/)
 ### With Docker</h3>
 [![Docker cloud build](https://img.shields.io/docker/cloud/build/batistaluisfilipe/movies_web)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
