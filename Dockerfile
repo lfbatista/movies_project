@@ -22,7 +22,7 @@ COPY requirements.txt /code
 RUN pip install -r requirements.txt
 
 # run gunicorn
-#CMD gunicorn fav_movies.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn fav_movies.wsgi:application --bind 0.0.0.0:$PORT
 
 # copy entrypoint.sh
 COPY entrypoint.sh /code/entrypoint.sh
@@ -31,4 +31,4 @@ COPY entrypoint.sh /code/entrypoint.sh
 COPY . /code
 
 # run entrypoint
-ENTRYPOINT ["/code/entrypoint.sh"]
+#ENTRYPOINT ["/code/entrypoint.sh"]
