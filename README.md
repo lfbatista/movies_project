@@ -1,29 +1,67 @@
-# Favorite Movies Polls (django + docker + heroku + gunicorn)
-
+# Favorite Movies Polls (django + gunicorn + nginx)
+## Production
+### With Heroku (w/out nginx)</h3>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lfbatista/movies_project/)
+### With Docker</h3>
+[![Docker cloud build](https://img.shields.io/docker/cloud/build/batistaluisfilipe/movies_web)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+[![Docker automated build](https://img.shields.io/docker/cloud/automated/batistaluisfilipe/movies_web)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+[![Docker image version](https://images.microbadger.com/badges/version/batistaluisfilipe/movies_web.svg)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+[![Docker image size](https://img.shields.io/docker/image-size/batistaluisfilipe/movies_web)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+[![Docker layers](https://img.shields.io/microbadger/layers/batistaluisfilipe/movies_web)](https://hub.docker.com/r/batistaluisfilipe/movies_web)
+<!-- [![](https://images.microbadger.com/badges/image/batistaluisfilipe/movies_web.svg)](https://hub.docker.com/r/batistaluisfilipe/movies_web) -->
 
-<h1>Quickstart</h1>
+- Rename *.env.prod.example* to *.env.prod*
+- Update the environment variables in the *docker-compose.yml* and *.env.dev* files
+- Build the images and run the containers:
+
+    ```sh
+    $ docker-compose -f docker-compose.prod.yml up -d
+    ```
+Browse [localhost](http://localhost)
+
+## Development
+### Quickstart
 <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.</p>
 
-<h2>Prerequisites</h2>
-<code>python==3.6 or up and django==2.7 or up</code>
+#### Using Docker
 
-<h2>Installing</h2>
-<pre>Open the terminal and type:</pre>
-<code>git clone https://github.com/lfbatista/movies_project.git</code><br>
-<h5>or download this repository.</h5>
+- Rename *.env.dev.example* to *.env.dev*
+- Update the environment variables in the *docker-compose.yml* and *.env.dev* files
+- Build the images and run the containers:
 
-<h2>Migrate the database using the terminal in the project directory and type:</h2>
-<code>python manage.py makemigrations</code><br>
-<code>python manage.py migrate</code>
+    ```sh
+    $ docker-compose up -d
+    ```
+Browse [localhost:8000](http://localhost:8000)
 
-<h2>Create a superuser using this command:</h2>
-<code>python manage.py createsuperuser</code>
+#### Manual Installation
+#### Prerequisites
+> python==3.6 or up and django==2.7 or up
 
-<h2>Run the program in a local server using the following command:</h2>
-<code>python manage.py runserver</code><br><br>
+In the terminal, type:
+```sh
+$ git clone https://github.com/lfbatista/movies_project.git
+```
+or [download](https://github.com/lfbatista/movies_project/archive/docker.zip) this repository.
 
-Browse [localhost:8000](http://localhost:8000) in your browser
+#### Migrate the database
+
+```sh
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+#### Create a superuser
+
+```sh
+$ python manage.py createsuperuser
+``` 
+#### Run the program in a local server
+
+```sh
+$ python manage.py runserver
+```
+Browse [localhost:8000](http://localhost:8000)
 
 ## Licensing [![license](https://img.shields.io/github/license/lfbatista/movies_project)](LICENSE)
 
