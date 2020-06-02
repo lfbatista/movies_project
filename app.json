@@ -6,6 +6,7 @@
     "keywords": [
         "django",
         "python",
-        "heroku"
+        "heroku",
+        "docker",
     ]
 }
