@@ -30,6 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", default="your_key_here")
 # DEBUG = False
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
+# add your host
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'movies-poll']
 # ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 

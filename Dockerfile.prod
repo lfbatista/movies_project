@@ -58,7 +58,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
   org.label-schema.docker.dockerfile="/Dockerfile.prod"
 
 # run gunicorn
-#CMD gunicorn fav_movies.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn fav_movies.wsgi:application --bind 0.0.0.0:$PORT
 
 # copy entrypoint-prod.sh
 COPY ./entrypoint.prod.sh $APP_HOME
