@@ -7,6 +7,6 @@
         "django",
         "python",
         "heroku",
-        "docker",
+        "docker"
     ]
 }
